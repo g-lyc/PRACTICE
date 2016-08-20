@@ -1,2 +1,1 @@
-# hello-world
-python and R
+python学习中练习代码
