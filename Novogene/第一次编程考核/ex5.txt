@@ -1,0 +1,38 @@
+setwd("C:/Users/30908/Desktop/±à³Ì¿¼ºË")
+
+pdf("Distribution.pdf")
+
+data <- read.table("02.plot.txt",sep="\t",header = T)
+data<-t(data)
+data <- data.frame(data)
+data <- data[2:6,]
+colnames(data) <- c('RuralMale','Rural Female','Urban Male','Urban Female')
+data$age <- c('70-74','65-69','60-64','55-59','50-54')
+data
+
+data1 <- data[c(5,1)]
+data1$Variable <- rep(colnames(data1[2]),5)
+colnames(data1)=c("Interval","Numbers","Variable")
+
+data2 <- data[c(5,2)]
+data2$Variable <- rep(colnames(data2[2],5))
+colnames(data2)=c("Interval","Numbers","Variable")
+
+
+data3 <- data[c(5,3)]
+data3$Variable <- rep(colnames(data3[2]),5)
+colnames(data3)=c("Interval","Numbers","Variable")
+
+
+data4 <- data[c(5,4)]
+data4$Variable <- rep(colnames(data4[2]),5)
+colnames(data4)=c("Interval","Numbers","Variable")
+
+
+data_all <- rbind(data1,data2,data3,data4)
+library(ggplot2)
+p <- ggplot(data_all,aes(Interval,weight=Numbers,fill=Variable))
+p <- p + geom_bar(position = "dodge")
+p <- p + ggtitle("Length Distribution") + xlab("Length Interval") + ylab("Numbers")
+p
+dev.off()

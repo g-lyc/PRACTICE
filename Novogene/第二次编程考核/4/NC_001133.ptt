@@ -1,0 +1,6 @@
+Location	Strand	Length	PID	Gene	Synonym	Code	COG	Product
+1807..2169	-	120	6319249	PAU8	YAL068C	-	-	hypothetical protein
+2480..2707	+	75	33438754	-	YAL067W-A	-	-	Putative protein of unknown function; identified by gene-trapping, microarray-based expression analysis, and genome-wide homology searching
+7236..9017	-	593	6319250	SEO1	YAL067C	-	-	Putative permease, member of the allantoate transporter subfamily of the major facilitator superfamily; mutation confers resistance to ethionine sulfoxide
+11566..11952	-	128	6319252	-	YAL065C	-	-	Putative protein of unknown function; has homology to FLO1; possible pseudogene
+12047..12427	+	126	6319253	-	YAL064W-B	-	-	Fungal-specific protein of unknown function

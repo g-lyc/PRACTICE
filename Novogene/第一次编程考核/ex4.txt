@@ -1,0 +1,10 @@
+setwd("C:/Users/30908/Desktop/±à³Ì¿¼ºË")
+data <- read.table("01.plot.txt",sep="\t",header = T)
+
+
+library(ggplot2)
+p <- ggplot(data_all,aes(data$COG,data$G1)
+p <- p + geom_line(position = "dodge")
+p <- p + xlab("SORT") + ylab("EXPRESSION")
+p
+dev.off()
