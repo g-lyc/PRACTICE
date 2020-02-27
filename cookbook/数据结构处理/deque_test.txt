@@ -1,0 +1,11 @@
+denovoRNA_new3
+channels
+dependencies:
+bioconductor-goseq
+fastqc
+python tttt
+trinity==2.6.6
+cd-hit
+transrate-tools
+transdecoder
+rsem
